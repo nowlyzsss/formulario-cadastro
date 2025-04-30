@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem Interativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ficha de Personagem - Formulário Interativo</h1>
+
+    <form action="#" method="POST">
+
+        <!-- Identidade -->
+        <div class="form-section">
+            <h2>Identidade</h2>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="apelido">Apelido(s) / Nome social / Codinome:</label>
+            <input type="text" id="apelido" name="apelido">
+
+            <label for="idade">Idade Atual:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="signo">Signo Solar:</label>
+            <input type="text" id="signo" name="signo">
+
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade">
+
+            <label for="linguas">Idioma(s) Falado(s):</label>
+            <input type="text" id="linguas" name="linguas">
+        </div>
+
+        <!-- Aparência -->
+        <div class="form-section">
+            <h2>Aparência Física</h2>
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura" name="altura">
+
+            <label for="cor-pele">Cor da Pele:</label>
+            <input type="text" id="cor-pele" name="cor-pele">
+
+            <label for="caracteristicas-faciais">Características Faciais Marcantes:</label>
+            <textarea id="caracteristicas-faciais" name="caracteristicas-faciais"></textarea>
+
+            <label for="cabelos">Cabelos (cor, textura, comprimento, estilo):</label>
+            <textarea id="cabelos" name="cabelos"></textarea>
+
+            <label for="marcas-visiveis">Marcas Visíveis (cicatrizes, sardas, etc.):</label>
+            <textarea id="marcas-visiveis" name="marcas-visiveis"></textarea>
+        </div>
+
+        <!-- Personalidade -->
+        <div class="form-section">
+            <h2>Personalidade</h2>
+            <label for="temperamento">Temperamento Predominante:</label>
+            <input type="text" id="temperamento" name="temperamento">
+
+            <label for="habilidades">Habilidades e Talentos:</label>
+            <textarea id="habilidades" name="habilidades"></textarea>
+
+            <label for="medos">Medos, Fobias e Inseguranças:</label>
+            <textarea id="medos" name="medos"></textarea>
+
+            <label for="como-lida-com-emocoes">Como lida com Emoções (raiva, tristeza, etc.):</label>
+            <textarea id="como-lida-com-emocoes" name="como-lida-com-emocoes"></textarea>
+        </div>
+
+        <!-- História e Passado -->
+        <div class="form-section">
+            <h2>História e Passado</h2>
+            <label for="infancia">Infância (ambiente, criação):</label>
+            <textarea id="infancia" name="infancia"></textarea>
+
+            <label for="adolescencia">Adolescência (mudanças, descobertas):</label>
+            <textarea id="adolescencia" name="adolescencia"></textarea>
+
+            <label for="conflitos-internos">Conflitos Internos Não Resolvidos:</label>
+            <textarea id="conflitos-internos" name="conflitos-internos"></textarea>
+        </div>
+
+        <!-- Relacionamentos -->
+        <div class="form-section">
+            <h2>Relacionamentos</h2>
+            <label for="melhores-amigos">Melhores Amigos:</label>
+            <textarea id="melhores-amigos" name="melhores-amigos"></textarea>
+
+            <label for="relacionamentos-passados">Relacionamentos Passados Marcantes:</label>
+            <textarea id="relacionamentos-passados" name="relacionamentos-passados"></textarea>
+
+            <label for="inimigos">Inimigos / Rivais:</label>
+            <textarea id="inimigos" name="inimigos"></textarea>
+        </div>
+
+        <!-- Vida Atual -->
+        <div class="form-section">
+            <h2>Vida Atual</h2>
+            <label for="ocupacao">Profissão / Ocupação Principal:</label>
+            <input type="text" id="ocupacao" name="ocupacao">
+
+            <label for="habitos">Hábitos Diários:</label>
+            <textarea id="habitos" name="habitos"></textarea>
+
+            <label for="saude">Saúde Física Atual:</label>
+            <textarea id="saude" name="saude"></textarea>
+        </div>
+
+        <!-- Enviar Formulário -->
+        <button type="submit" class="submit-btn">Enviar Ficha</button>
+
+    </form>
+
+</body>
+</html>
